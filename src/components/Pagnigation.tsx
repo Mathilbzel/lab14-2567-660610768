@@ -1,10 +1,9 @@
-import { Text } from '@mantine/core';
-import { FooterProps } from '@lib/types';
+import { Pagination, Group} from '@mantine/core';
 
-export default function Footer({year, name, studentId}: FooterProps){
-  return (
-    <>
-      <Text ta="center" c="dimmed" my="sm" fz={15.2} >Copyright © {year} {name} {studentId}</Text>
-    </>
-  );
+export default function Pagnigation() {
+    return (
+        <Group justify="center" mt="sm" >
+            <Pagination total={20} color="orange"/>
+        </Group>
+    );
 }
